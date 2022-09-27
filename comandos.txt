@@ -112,3 +112,84 @@ kubectl scale --replicas=3 deployment simple-deployment
 
 kubectl scale --replicas=3 deployment simple-deployment
 kubectl get deployment simple-deployment
+
+
+
+
+argocd app create demo \ --project default \ --repo https://github.com/fch-bsp/gitops-certification-examples \ --path "./sync-strategies" \ --dest-namespace default \ --dest-server https://kubernetes.default.svc
+
+criação:
+
+
+
+
+argocd app create external-app \
+--project default \
+--repo https://github.com/fch-bsp/gitops-cert-level-2-examples \
+--path "./simple-application" \
+--dest-namespace argocd \
+--dest-server https://kubernetes.default.svc
+
+
+kubectl apply -f https://raw.githubusercontent.com/fch-bsp/gitops-cert-level-2-examples/edit/main/app-of-apps/root-app/my-application.yml -n argocd
+
+kubectl apply -f https://github.com/fch-bsp/gitops-cert-level-2-examples/edit/main/app-of-apps/root-app/my-application.yml -n argocd
+
+kubectl apply -f https://raw.githubusercontent.com/fch-bsp/gitops-cert-level-2-examples/main/app-of-apps/root-app/my-application.yml -n argocd
+
+argocd login kubernetes-vm:30443 --insecure --username admin --password S4N4Bx2oTRf-Z-Ir
+
+https://github.com/codefresh-contrib/gitops-cert-level-2-examples.git
+
+
+argocd login kubernetes-vm:30443 --insecure --username admin --password 4V33FT3U9LaSgvC5
+
+
+repoURL: https://github.com/fch-bsp/gitops-cert-level-2-examples
+
+argocd app create ambassador \
+--project default \
+--repo https://github.com/fch-bsp/gitops-certification-examples \
+--path "./ambassador-chart" \
+--sync-policy auto \
+--dest-namespace ambassador \
+--dest-server https://kubernetes.default.svc
+
+argocd app create demo \
+--project default \
+--repo https://github.com/fch-bsp/gitops-certification-examples \
+--path "./canary-app" \
+--dest-namespace default \
+--dest-server https://kubernetes.default.svc
+
+lista:
+
+argocd app list
+argocd app get kustomize-gitops-example
+argocd app history kustomize-gitops-example
+
+delete:
+
+argocd app delete my-favorite-apps
+
+
+criação 2 :
+
+argocd app create demo \
+--project default \
+--repo https://github.com/codefresh-contrib/gitops-certification-examples \
+--path ./blue-green-app \
+--sync-policy auto \
+--dest-namespace default \
+--dest-server https://kubernetes.default.svc
+
+kubectl get all
+
+
+
+argocd app demo \
+--project default \
+--repo https://github.com/fch-bsp/gitops-certification-examples \
+--path "./argo-rollouts-controller" \
+--dest-namespace argo-rollouts \
+--dest-server https://kubernetes.default.svc
