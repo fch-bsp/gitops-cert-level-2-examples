@@ -95,6 +95,7 @@ argocd app history demo
 
 
 comandos 
+::
 
 argocd
 
