@@ -102,7 +102,7 @@ argocd
 
 A implantação de novas versões de seu aplicativo com um alto grau de confiança é uma meta desejável, pois obter recursos de forma confiável para produção é uma das características mais importantes das organizações em rápida evolução
 
-
+comando: 
 argocd app sync demo
 argocd app wait demo
 
