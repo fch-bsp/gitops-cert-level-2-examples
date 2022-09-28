@@ -2,7 +2,7 @@ apiVersion: batch/v1
 kind: Job
 metadata:
   namespace: example06
-  generateName: cleanup-after-sync-wave 20
+  generateName: cleanup-after-sync-PostSync, wave 20
   labels:
     codefresh.io/cert: cleanup-job  
 spec:
