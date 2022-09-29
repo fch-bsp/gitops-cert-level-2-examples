@@ -1,30 +1,12 @@
-# apiVersion: batch/v1
-# kind: Job
-# metadata:
-#   namespace: example06
-#   generateName: cleanup-after-sync
-#   labels:
-#     codefresh.io/cert: cleanup-job  
-# spec:
-#   template:
-#     spec:
-#       containers:
-#       - name: dummy-run
-#         image: alpine
-#         command:
-#           - "sleep"
-#           - "10"
-#       restartPolicy: Never
-#   backoffLimit: 2    
-
-
 apiVersion: batch/v1
 kind: Job
 metadata:
   namespace: example06
-  name: cleanup-after-sync
+  generateName: cleanup-after-sync-
   annotations:
     argocd.argoproj.io/sync-wave: "20" 
+  labels:
+    codefresh.io/cert: cleanup-job  
 spec:
   template:
     spec:
@@ -36,3 +18,5 @@ spec:
           - "10"
       restartPolicy: Never
   backoffLimit: 2    
+
+
