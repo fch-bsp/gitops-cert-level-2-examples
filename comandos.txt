@@ -1,6 +1,6 @@
 https://github.com/fch-bsp/gitops-certification-examples
 
-teste   
+testar  
 
 argocd app demo \
 --project default \
