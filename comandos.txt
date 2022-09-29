@@ -194,3 +194,11 @@ argocd app demo \
 --path "./argo-rollouts-controller" \
 --dest-namespace argo-rollouts \
 --dest-server https://kubernetes.default.svc
+
+
+argocd app problematic-apps \
+--project default \
+--repo https://github.com/fch-bsp/gitops-cert-level-2-examples \
+--path "./custom-diff/applications" \
+--dest-namespace argocd\
+--dest-server https://kubernetes.default.svc
