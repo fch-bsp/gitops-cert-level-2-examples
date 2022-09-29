@@ -5,7 +5,7 @@ metadata:
   name: simple-deployment
   namespace: example01
 spec:
-  replicas: 1
+  replicas: 30
   selector:
     matchLabels:
       app: trivial-go-web-app
