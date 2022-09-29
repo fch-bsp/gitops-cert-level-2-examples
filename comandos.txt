@@ -196,9 +196,9 @@ argocd app demo \
 --dest-server https://kubernetes.default.svc
 
 
-argocd app example01 \
+argocd app example02 \
 --project default \
 --repo https://github.com/fch-bsp/gitops-cert-level-2-examples \
---path "./sync-hooks-waves/01-default-order" \
---dest-namespace example01 \
+--path "./sync-hooks-waves/02-presync-job" \
+--dest-namespace example02 \
 --dest-server https://kubernetes.default.svc
