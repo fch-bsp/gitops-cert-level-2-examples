@@ -148,11 +148,10 @@ argocd login kubernetes-vm:30443 --insecure --username admin --password 4V33FT3U
 
 repoURL: https://github.com/fch-bsp/gitops-cert-level-2-examples
 
-argocd app create ambassador \
+argocd app my-favorite-apps \
 --project default \
---repo https://github.com/fch-bsp/gitops-certification-examples \
---path "./ambassador-chart" \
---sync-policy auto \
+--repo https://github.com/fch-bsp/gitops-cert-level-2-examples.git \
+--path "./app-of-apps/my-app-list" \
 --dest-namespace ambassador \
 --dest-server https://kubernetes.default.svc
 
