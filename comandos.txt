@@ -201,3 +201,5 @@ argocd app example01 \
 --path "./sync-hooks-waves/01-default-order" \
 --dest-namespace example01 \
 --dest-server https://kubernetes.default.svc
+
+kubectl apply -f https://raw.githubusercontent.com/fch-bsp/gitops-cert-level-2-examples/main/app-of-apps/root-app/my-application.yml -n argocd
