@@ -1,4 +1,4 @@
- ..dapiVersion: argoproj.io/v1alpha1
+apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: cert-manager
@@ -13,7 +13,7 @@ spec:
 
   # Source of the application manifests
   source:
-    repoURL: https://github.com/fch-bsp/gitops-cert-level-2-examples.git
+    repoURL: https://github.com/codefresh-contrib/gitops-cert-level-2-examples.git
     targetRevision: HEAD
     path: ./app-of-apps/manifests
    
