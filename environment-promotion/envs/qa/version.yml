@@ -9,3 +9,6 @@ spec:
       containers:
       - name: webserver-simple
         image: docker.io/kostiscodefresh/simple-env-app:3.0
+
+
+# version.yml = define a imagem do contêiner

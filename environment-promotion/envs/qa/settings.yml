@@ -19,3 +19,8 @@ spec:
           value: "ascending"    
         - name: N_BUCKETS
           value: "24"          
+
+
+
+#  settings.yml = define as configurações de nível de aplicativo 
+#  para o aplicativo (variáveis ​​de ambiente)          
