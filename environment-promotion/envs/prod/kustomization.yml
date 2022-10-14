@@ -12,8 +12,6 @@ components:
 
 patchesStrategicMerge:
 - deployment.yml
-- 
-
 - replicas.yml
 - settings.yml
 - service.yml
