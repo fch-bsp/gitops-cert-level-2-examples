@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: app-staging
-  namespace: staging
+  namespace: argocd
 spec:
   project: default
 
@@ -12,7 +12,7 @@ spec:
     path: ./environment-promotion/envs/staging # monitorando de 3 em 3 minutos 
   destination: 
     server: https://kubernetes.default.svc
-    namespace: goapp
+    namespace: staging
 
   syncPolicy:
     syncOptions:
