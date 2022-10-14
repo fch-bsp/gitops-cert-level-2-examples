@@ -19,3 +19,6 @@ spec:
           value: "ascending"    
         - name: N_BUCKETS
           value: "24"          
+
+
+# Define as configurações de nível de aplicativo PARA o aplicativo (variavies de ambiente)                     
