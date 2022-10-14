@@ -11,5 +11,3 @@ spec:
         protocol: TCP
         port: 8080
         name: qa-port
-
-# Define porta para expor o aplicativo 

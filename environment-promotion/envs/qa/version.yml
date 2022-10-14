@@ -9,5 +9,3 @@ spec:
       containers:
       - name: webserver-simple
         image: docker.io/kostiscodefresh/simple-env-app:3.0
-
-# Arquivo version define a Imagem do container        

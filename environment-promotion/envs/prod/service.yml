@@ -11,5 +11,3 @@ spec:
         protocol: TCP
         port: 8080
         name: prod-port
-        
-# Define porta para expor o aplicativo 

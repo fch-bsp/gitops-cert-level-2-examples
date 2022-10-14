@@ -5,5 +5,3 @@ metadata:
   name: simple-deployment
 spec:
   replicas: 4
-
-# Define o numero de Replicas da aplicação 

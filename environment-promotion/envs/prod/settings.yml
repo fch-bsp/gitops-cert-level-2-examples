@@ -10,7 +10,7 @@ spec:
       - name: webserver-simple
         env:
         - name: UI_THEME
-          value: "light"
+          value: "dark"
         - name: CACHE_SIZE
           value: "1024kb"
         - name: PAGE_LIMIT
@@ -18,7 +18,4 @@ spec:
         - name: SORTING
           value: "ascending"    
         - name: N_BUCKETS
-          value: "24"          
-
-
-# Define as configurações de nível de aplicativo PARA o aplicativo (variavies de ambiente)                     
+          value: "12"          
