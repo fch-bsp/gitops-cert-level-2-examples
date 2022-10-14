@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: app-qa
+  name: qa
   namespace: argocd
 spec:
   project: default
