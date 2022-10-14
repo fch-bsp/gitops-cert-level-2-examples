@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: app-prod
+  namespace: argocd
+spec:
+  project: default
+
+  source:
+    repoURL: https://github.com/fch-bsp/gitops-cert-level-2-examples.git
+    targetRevision: HEAD
+    path: ./environment-promotion/envs/prod # monitorando de 3 em 3 minutos 
+  destination: 
+    server: https://kubernetes.default.svc
+    namespace: prod
+
+  syncPolicy:
+    syncOptions:
+    - CreateNamespace=true
+
+    # automated:
+    #   selfHeal: false
+    #   prune: false
