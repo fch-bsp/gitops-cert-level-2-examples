@@ -12,12 +12,13 @@ spec:
         - name: UI_THEME
           value: "light"
         - name: CACHE_SIZE
-          value: "2048kb"
+          value: "1024kb"
         - name: PAGE_LIMIT
           value: "25"
         - name: SORTING
           value: "ascending"    
         - name: N_BUCKETS
-          value: "42"          
+          value: "24"          
 
-# Define as configurações de nível de aplicativo PARA o aplicativo (variavies de ambiente)           
+
+# Define as configurações de nível de aplicativo PARA o aplicativo (variavies de ambiente)                     
