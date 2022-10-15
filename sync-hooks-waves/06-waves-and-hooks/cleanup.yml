@@ -3,10 +3,9 @@ kind: Job
 metadata:
   namespace: example06
   generateName: cleanup-after-sync-
-  labels:
-    codefresh.io/cert: cleanup-job
-  anotations:
-    argocd.argoproj.io/sync-wave: PostSync,wave 20    
+  annotations:
+    argocd.argoproj.io/hook: PreSync
+    argocd.argoproj.io/sync-wave: "20"     
 spec:
   template:
     spec:
