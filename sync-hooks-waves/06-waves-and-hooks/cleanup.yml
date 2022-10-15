@@ -3,8 +3,6 @@ kind: Job
 metadata:
   namespace: example06
   generateName: cleanup-after-sync-
-  annotations:
-    argocd.argoproj.io/sync-wave: "20" 
   labels:
     codefresh.io/cert: cleanup-job  
 spec:
@@ -18,5 +16,3 @@ spec:
           - "10"
       restartPolicy: Never
   backoffLimit: 2    
-
-

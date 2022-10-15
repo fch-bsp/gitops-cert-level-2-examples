@@ -2,9 +2,7 @@ apiVersion: batch/v1
 kind: Job
 metadata:
   namespace: example06
-  generateName: grafana-notify-10
-  annotations:
-    argocd.argoproj.io/sync-wave: "10" 
+  generateName: grafana-notify-
   labels:
     codefresh.io/cert: grafana-job  
 spec:
