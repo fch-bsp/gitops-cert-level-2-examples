@@ -6,6 +6,6 @@ metadata:
 # 0 artifact -> namespace
 # 1 artifact -> db-update -20
 # 2 artifact -> grafana-notify -10
-# 3 artifact -> deplotment default
+# 3 artifact -> deployment default
 # 5 artifact -> service default
 # 6 artifact -> cleanup 10
