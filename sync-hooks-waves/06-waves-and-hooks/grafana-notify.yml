@@ -5,7 +5,7 @@ metadata:
   generateName: grafana-notify-
   annotations:
     argocd.argoproj.io/hook: Sync
-    argocd.argoproj.io/sync-wave: "-15" 
+    argocd.argoproj.io/sync-wave: "-10" 
 spec:
   template:
     spec:

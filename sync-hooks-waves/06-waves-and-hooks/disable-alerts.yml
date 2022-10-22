@@ -5,7 +5,7 @@ metadata:
   generateName: disable-alerts-
   annotations:
     argocd.argoproj.io/hook: PreSync
-    argocd.argoproj.io/sync-wave: "25" 
+    argocd.argoproj.io/sync-wave: "20" 
 spec:
   template:
     spec:

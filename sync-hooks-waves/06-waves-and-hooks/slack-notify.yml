@@ -5,7 +5,7 @@ metadata:
   generateName: slack-notify-
   annotations:
     argocd.argoproj.io/hook: PostSync
-    argocd.argoproj.io/sync-wave: "45" 
+    argocd.argoproj.io/sync-wave: "30" 
 spec:
   template:
     spec:
