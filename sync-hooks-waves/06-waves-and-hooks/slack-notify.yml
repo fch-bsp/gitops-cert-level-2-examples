@@ -4,7 +4,7 @@ metadata:
   namespace: example06
   generateName: slack-notify-
   labels:
-    codefresh.io/cert: SyncFail
+    codefresh.io/cert: slack-job  
 spec:
   template:
     spec:

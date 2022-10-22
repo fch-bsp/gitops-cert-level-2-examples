@@ -4,6 +4,7 @@ metadata:
   namespace: example06
   generateName: disable-alerts-
   annotations:
+    argocd.argoproj.io/hook: PreSync
     argocd.argoproj.io/sync-wave: "20" 
 spec:
   template:
