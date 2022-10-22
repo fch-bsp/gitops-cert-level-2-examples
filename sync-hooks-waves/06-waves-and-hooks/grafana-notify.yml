@@ -4,8 +4,7 @@ metadata:
   namespace: example06
   generateName: grafana-notify-
   annotations:
-    argocd.argoproj.io/hook: PostSync
-    argocd.argoproj.io/sync-wave: "30" 
+    argocd.argoproj.io/sync-wave: "10" 
 spec:
   template:
     spec:

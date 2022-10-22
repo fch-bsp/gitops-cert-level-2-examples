@@ -16,3 +16,6 @@ spec:
           - "10"
       restartPolicy: Never
   backoffLimit: 2    
+
+
+#Executa o PreSync 1 
