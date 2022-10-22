@@ -1,10 +1,11 @@
-cleanup.yml -> PostSync, wave 20
-db-upgrade.yml -> PreSync, wave 10
-disable-alerts.yml -> PreSync, wave 20
-enable-alerts.yml -> PostSync, wave 30
-grafana-notify.yml -> Sync, wave -10
-slack-notify.yml -> PostSync, wave 30
-smoke-test.yml -> PostSync, wave 10
+1 db-upgrade.yml -> PreSync, wave 20
+2 disable-alerts.yml -> PreSync, wave 25
+3 cleanup.yml -> PostSync, wave 30
+3 enable-alerts.yml -> PostSync, wave 40
+3 slack-notify.yml -> PostSync, wave 45
+4 deployment
+5 servicegrafana-notify.yml -> Sync, wave -15
+6 smoke-test.yml -> PostSync, wave 20
 
 
 ./sync-hooks-waves/06-waves-and-hooks

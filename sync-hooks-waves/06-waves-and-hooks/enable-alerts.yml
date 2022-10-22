@@ -4,8 +4,8 @@ metadata:
   namespace: example06
   generateName: enable-alerts-
   annotations:
-    argocd.argoproj.io/hook: PreSync
-    argocd.argoproj.io/sync-wave: "30"  
+    argocd.argoproj.io/hook: PostSync
+    argocd.argoproj.io/sync-wave: "40"  
 spec:
   template:
     spec:
