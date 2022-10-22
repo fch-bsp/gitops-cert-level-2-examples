@@ -5,6 +5,7 @@ metadata:
   generateName: slack-notify-
   annotations:
     argocd.argoproj.io/hook: SyncFail
+spec:
   template:
     spec:
       containers:
