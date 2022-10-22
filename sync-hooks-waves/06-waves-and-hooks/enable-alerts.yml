@@ -17,3 +17,12 @@ spec:
           - "3"
       restartPolicy: Never
   backoffLimit: 2    
+
+# 1 db-upgrade.yml -> PreSync, wave 10
+# 2 cleanup.yml -> PostSync, wave 20
+# 2 disable-alerts.yml -> PreSync, wave 20
+# 3 enable-alerts.yml -> PostSync, wave 30
+# 3 slack-notify.yml -> PostSync, wave 30
+# 4 deployment
+# 5 servicegrafana-notify.yml -> Sync, wave -10
+# 6 smoke-test.yml -> PostSync, wave 10
