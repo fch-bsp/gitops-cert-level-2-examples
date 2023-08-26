@@ -213,3 +213,11 @@ argocd app create prod \
 --path ./environment-promotion/envs/prod \
 --dest-namespace prod \
 --dest-server https://kubernetes.default.svc
+
+
+argocd app create staging \
+--project default \
+--repo https://github.com/fch-bsp/gitops-cert-level-2-examples.git \
+--path ./environment-promotion/envs/staging \
+--dest-namespace staging \
+--dest-server https://kubernetes.default.svc
