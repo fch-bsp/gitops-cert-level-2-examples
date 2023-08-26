@@ -203,3 +203,13 @@ argocd app example01 \
 --dest-server https://kubernetes.default.svc
 
 kubectl apply -f https://raw.githubusercontent.com/fch-bsp/gitops-cert-level-2-examples/main/app-of-apps/root-app/my-application.yml -n argocd
+========================
+
+
+
+argocd app create prod \
+--project default \
+--repo https://github.com/fch-bsp/gitops-cert-level-2-examples.git \
+--path ./environment-promotion/envs/prod \
+--dest-namespace prod \
+--dest-server https://kubernetes.default.svc
