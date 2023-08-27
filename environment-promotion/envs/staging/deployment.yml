@@ -10,7 +10,7 @@ spec:
       - name: webserver-simple
         env:
         - name: ENV
-          value: "staging"
-        - name: GPU_ENABLED
-          value: "1"
+          value: "staging"  # Definindo o valor da variável "ENV" como "staging"
+        - name: GPU_ENABLED # Definindo uma variável de ambiente chamada "GPU_ENABLED"
+          value: "1"        # Definindo o valor da variável "GPU_ENABLED" como "1"
       

@@ -1,19 +1,93 @@
+
+# Definindo a versão da API e o tipo do recurso Kustomize
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
+# Definindo o namespace onde os recursos serão implantados
 namespace: staging 
+
+# Prefixo adicionado aos nomes dos recursos
 namePrefix: staging-
 
+# Lista de recursos que serão usados para construir a configuração
 resources:
-- ../../base
+- ../../base  # Recursos na pasta "base"
 
+# Lista de componentes que podem ser personalizados
 components:
-  - ../../variants/non-prod
+  - ../../variants/non-prod  # Componente específico para ambientes não-produtivos
 
+# Fusão estratégica de patches para personalização
 patchesStrategicMerge:
-- deployment.yml
-- version.yml
-- replicas.yml
-- settings.yml
-- service.yml
+- deployment.yml  # Patch para o deployment
+- version.yml     # Patch para a versão
+- replicas.yml    # Patch para o número de réplicas
+- settings.yml    # Patch para as configurações
+- service.yml     # Patch para o serviço
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# apiVersion: kustomize.config.k8s.io/v1beta1
+# kind: Kustomization
+
+# namespace: staging 
+# namePrefix: staging-
+
+# resources:
+# - ../../base
+
+# components:
+#   - ../../variants/non-prod
+
+# patchesStrategicMerge:
+# - deployment.yml
+# - version.yml
+# - replicas.yml
+# - settings.yml
+# - service.yml
