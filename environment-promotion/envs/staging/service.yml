@@ -1,73 +1,14 @@
-# Definindo a versão da API e o tipo do recurso como um Service do Kubernetes
+
 apiVersion: v1
 kind: Service
-
-# Metadados associados ao Service
 metadata:
-  name: simple-service  # Nome do recurso Service
-
-# Especificações do Service
+  name: simple-service
 spec:
-  type: LoadBalancer  # Tipo do Service é LoadBalancer, expondo o serviço para fora do cluster
+  type: LoadBalancer
   selector:
-    app: trivial-go-web-app  # Seleciona os pods com a label "app=trivial-go-web-app"
-
-  # Configurações de portas para o Service
+    app: trivial-go-web-app
   ports:
-    - nodePort: 31007  # Número da porta exposta no nó do cluster
-      protocol: TCP     # Protocolo de rede utilizado (TCP)
-      port: 8080        # Porta do serviço dentro do cluster
-      name: staging-port  # Nome da porta do serviço (para identificação)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# apiVersion: v1
-# kind: Service
-# metadata:
-#   name: simple-service
-# spec:
-#   type: LoadBalancer
-#   selector:
-#     app: trivial-go-web-app
-#   ports:
-#       - nodePort: 31007
-#         protocol: TCP
-#         port: 8080
-#         name: staging-port
+      - nodePort: 31007
+        protocol: TCP
+        port: 8080
+        name: staging-port

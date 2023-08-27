@@ -1,79 +1,21 @@
-# Definindo a versão da API e o tipo do recurso como um Deployment do Kubernetes
+---
 apiVersion: apps/v1
 kind: Deployment
-
-# Metadados associados ao Deployment
 metadata:
-  name: simple-deployment  # Nome do recurso Deployment
-
-# Especificações do Deployment
+  name: simple-deployment
 spec:
   template:
     spec:
       containers:
-      - name: webserver-simple  # Nome do container dentro do pod
-        
-        # Definindo variáveis de ambiente para o container
+      - name: webserver-simple
         env:
-        - name: UI_THEME      # Nome da variável de ambiente UI_THEME
-          value: "dark"       # Valor atribuído à variável de ambiente UI_THEME ("dark")
-        - name: CACHE_SIZE    # Nome da variável de ambiente CACHE_SIZE
-          value: "1024kb"     # Valor atribuído à variável de ambiente CACHE_SIZE ("1024kb")
-        - name: PAGE_LIMIT    # Nome da variável de ambiente PAGE_LIMIT
-          value: "25"         # Valor atribuído à variável de ambiente PAGE_LIMIT ("25")
-        - name: SORTING       # Nome da variável de ambiente SORTING
-          value: "ascending"  # Valor atribuído à variável de ambiente SORTING ("ascending")
-        - name: N_BUCKETS     # Nome da variável de ambiente N_BUCKETS
-          value: "12"         # Valor atribuído à variável de ambiente N_BUCKETS ("12")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# ---
-# apiVersion: apps/v1
-# kind: Deployment
-# metadata:
-#   name: simple-deployment
-# spec:
-#   template:
-#     spec:
-#       containers:
-#       - name: webserver-simple
-#         env:
-#         - name: UI_THEME
-#           value: "dark"
-#         - name: CACHE_SIZE
-#           value: "1024kb"
-#         - name: PAGE_LIMIT
-#           value: "25"
-#         - name: SORTING
-#           value: "ascending"    
-#         - name: N_BUCKETS
-#           value: "12"          
+        - name: UI_THEME
+          value: "dark"
+        - name: CACHE_SIZE
+          value: "1024kb"
+        - name: PAGE_LIMIT
+          value: "25"
+        - name: SORTING
+          value: "ascending"    
+        - name: N_BUCKETS
+          value: "12"          

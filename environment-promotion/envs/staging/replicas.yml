@@ -1,20 +1,7 @@
-# ---
-# apiVersion: apps/v1
-# kind: Deployment
-# metadata:
-#   name: simple-deployment
-# spec:
-#   replicas: 1
-
-
-# Definindo a versão da API e o tipo do recurso como um Deployment do Kubernetes
+---
 apiVersion: apps/v1
 kind: Deployment
-
-# Metadados associados ao Deployment
 metadata:
-  name: simple-deployment  # Nome do recurso Deployment
-
-# Especificações do Deployment
+  name: simple-deployment
 spec:
-  replicas: 1  # Número de réplicas desejadas para o Deployment
+  replicas: 1
