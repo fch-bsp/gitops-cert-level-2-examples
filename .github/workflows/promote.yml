@@ -54,8 +54,8 @@ jobs:
         if:  ${{ inputs.promote_container }}
         uses: canastro/copy-file-action@master
         with:
-          source: "environment-promotion/envs/${{ inputs.source_env }}/version.yml"
-          target: "environment-promotion/envs/${{ inputs.target_env }}/version.yml"
+          source: "environment-promotion/envs/${{ inputs.source_env }}/replicas.yml"
+          target: "environment-promotion/envs/${{ inputs.target_env }}/replicas.yml"
       - name: Copy settings 
         if:  ${{ inputs.promote_configmaps }}
         uses: canastro/copy-file-action@master
