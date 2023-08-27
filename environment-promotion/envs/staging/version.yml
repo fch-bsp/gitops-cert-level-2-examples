@@ -7,5 +7,5 @@ spec:
   template:
     spec:
       containers:
-      - name: webserver-simple # Nome do container dentro do pod
-        image: docker.io/kostiscodefresh/simple-env-app:1.0 # Especificando a imagem do container a ser usada
+      - name: webserver-simple
+        image: docker.io/kostiscodefresh/simple-env-app:2.0
