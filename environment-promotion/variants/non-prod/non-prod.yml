@@ -14,6 +14,6 @@ spec:
         - name: PAYPAL_URL
           value: "staging2.paypal.com"
         - name: DB_USER
-          value: "non-prod-user"
+          value: "non-nandohras"
         - name: DB_PASSWORD
           value: "non-prod-password"    
