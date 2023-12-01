@@ -6,7 +6,7 @@ metadata:
   annotations:
     codefresh.io/app: simple-go-app
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: trivial-go-web-app
